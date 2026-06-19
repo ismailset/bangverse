@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-150: var(--neutral-150);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-250: var(--neutral-250);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-350: var(--neutral-350);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-405: var(--neutral-405);
+  --color-neutral-450: var(--neutral-450);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-550: var(--neutral-550);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-650: var(--neutral-650);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-805: var(--neutral-805);
+  --color-neutral-850: var(--neutral-850);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-905: var(--neutral-905);
+  --color-neutral-950: var(--neutral-950);
+}
+
+:root {
+  --neutral-50: #f9f9fb;
+  --neutral-100: #f1f3f5;
+  --neutral-150: #e9ecef;
+  --neutral-200: #dee2e6;
+  --neutral-250: #ced4da;
+  --neutral-300: #adb5bd;
+  --neutral-350: #8e96a0;
+  --neutral-400: #5c6370;
+  --neutral-405: #4e5561;
+  --neutral-450: #42424e;
+  --neutral-500: #33333d;
+  --neutral-550: #2a2a33;
+  --neutral-600: #22222a;
+  --neutral-650: #1a1a21;
+  --neutral-700: #121217;
+  --neutral-800: #0a0a0e;
+  --neutral-805: #07070a;
+  --neutral-850: #050507;
+  --neutral-900: #030304;
+  --neutral-905: #020203;
+  --neutral-950: #010101;
+}
+
+.dark {
+  --neutral-50: #121216;
+  --neutral-100: #1c1c22;
+  --neutral-150: #25252e;
+  --neutral-200: #31313c;
+  --neutral-250: #41414f;
+  --neutral-300: #626275;
+  --neutral-350: #84849a;
+  --neutral-400: #a5a5ba;
+  --neutral-405: #b5b5cb;
+  --neutral-450: #c6c6dc;
+  --neutral-500: #d6d6eb;
+  --neutral-550: #e4e4f5;
+  --neutral-600: #ededfa;
+  --neutral-650: #f4f4fd;
+  --neutral-700: #fafafc;
+  --neutral-800: #fefefe;
+  --neutral-805: #ffffff;
+  --neutral-850: #0a0a0c;
+  --neutral-900: #070709;
+  --neutral-905: #040405;
+  --neutral-950: #020203;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base custom classes from the "Bold Typography" Design theme */
+.glass {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark .glass {
+  background: rgba(10, 10, 12, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Hero radial gradient from the "Bold Typography" design spec */
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, #F5F5F7 0%, #FFFFFF 100%) !important;
+}
+
+.dark .hero-gradient {
+  background: radial-gradient(circle at 50% 50%, #151518 0%, #0A0A0C 100%) !important;
+}
+
+/* Text outline effect from the bold typographic identity */
+.text-outline {
+  color: transparent !important;
+  -webkit-text-stroke: 1.5px currentColor !important;
+}
+
+/* Button shadow class for bold interactive elements */
+.btn-shadow {
+  box-shadow: 0 10px 20px -5px rgba(37,99,235,0.2) !important;
+}
+
+.btn-shadow:hover {
+  box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.35) !important;
+}

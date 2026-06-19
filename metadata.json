@@ -1,0 +1,8 @@
+{
+  "name": "BongVerse Streetwear",
+  "description": "Premium e-commerce landing page for BongVerse, a Bangladeshi student streetwear label. Combining minimalist design, real 3D product engines, and AI model coordination.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
